@@ -18,8 +18,51 @@
             <input type="password" placeholder="password" class="form-control"><br>
             <button id="submit" class="btn btn-success">Submit</button>
         </div>
-
     </div>
+
+    <div id="transaction-area" >
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2> $ <span id="deposit-current">00</span></h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="withdraw status">
+                <h5>withdraw</h5>
+                <h2>$ 00</h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="balance status">
+                <h5>Balance</h5>
+                <h2>$ <span id="balance-current" >1200</span></h2>
+               </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area mt-5 p-5">
+                    <h4>Deposit</h4>
+                    <input id="deposit-amount" type="text" placeholder="$ amount you want to deposit" class="form-control"><br>
+                    <button id="deposit-add" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area mt-5 p-5">
+                    <h4>Withdraw</h4>
+                    <input id="withdraw-amount" type="text" placeholder="$ amount you want to withdraw" class="form-control"><br>
+                    <button id="withdraw-less" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
 
     <script src="bank.js"></script>
 </body>
